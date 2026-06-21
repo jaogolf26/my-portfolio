@@ -1,0 +1,118 @@
+{
+  "profile": {
+    "heroTitle": "PANUPONG.J",
+    "heroSubtitle": "Video Editor & Motion Designer",
+    "aboutText1": "สวัสดีครับ ผมกอล์ฟ Video Editor เรียนจบนิเทศศาสตร์ดิจิทัล สาขาวิชา สื่อสารมวลชน",
+    "aboutText2": "ประสบการณ์จากการฝึกงานที่ บริษัท ขอบสนาม จำกัด เป็นเวลา 8 เดือน\n        ผมได้ฝึกงานในตำแหน่งตัดต่อวีดีโอ และตำแหน่ง Production เช่น ช่างภาพ/วีดีโอ Live Stream \n\n        ประสบการณ์การทำงานที่ บริษัท SB FURNITURE GROUP ตั้งแต่วันที่ 5 พฤษภาคม พ.ศ.2567 - ปัจจุบัน ตำแหน่งงาน Video Editor",
+    "aboutImageUrl": "/uploads/profile-1781799733350.jpg",
+    "skills": [
+      "Premiere Pro",
+      "After Effects",
+      "Capcut",
+      "Photoshop"
+    ]
+  },
+  "contact": {
+    "facebook": "https://www.facebook.com/golfphanupong.janwan.5",
+    "instagram": "https://www.instagram.com/pxnu.g/",
+    "line": "https://line.me/ti/p/uVMg9Ny1vo",
+    "phone": "063-2572115"
+  },
+  "port": [
+    {
+      "id": "cat-1781789104197",
+      "title": "ขอบสนาม DARKSIDE",
+      "videos": [
+        {
+          "id": "vid-1781792004252",
+          "title": " ขอบสนามดาร์คไซส์ โศภนาฏกรรมโตโก",
+          "youtubeUrl": "https://youtu.be/Lkjvl0pNRqw?si=H6jHTHvX0qJeTgu8"
+        }
+      ],
+      "description": "ตัดต่อเรียบเรียงประเด็น หาฟุตเทจประกอบ ใส่ Sound และ กราฟิกต่างๆ โดยตัดต่อลงใน 2 แพลตฟอร์ม คือ YouTube อัตราส่วน 16:9 และ Facebook อัตราส่วน 4:5 Mood รายการเป็นการเล่าเรื่องราวด้านมืดของวงการฟุตบอล โดยมีพิธีกร 1 คน เป็นคนเล่าเรื่อง "
+    },
+    {
+      "id": "cat-1781801222917",
+      "title": "เกมส์เองละเลงข่าว",
+      "videos": [
+        {
+          "id": "vid-1781801260365",
+          "title": "เกมส์เองละเลงข่าว 4 เเข้งเตรียมย้ายออกจากลีกซาอุฯ",
+          "youtubeUrl": "https://youtu.be/4EmNvnVzRDg"
+        }
+      ],
+      "description": "  เป็นผลงานจากการฝึกงานที่ ขอบสนาม โดยมีหน้าที่ตัดต่อเรียบเรียงประเด็น หาฟุตเทจประกอบ ใส่ Sound และ กราฟิกต่างๆ โดยตัดต่อลงใน 2 แพลตฟอร์ม คือ YouTube อัตราส่วน 16:9 และ Facebook อัตราส่วน 4:5"
+    },
+    {
+      "id": "cat-1781793888195",
+      "title": "ขอบสนาม Tiktok",
+      "videos": [
+        {
+          "id": "vid-1781794680965",
+          "title": "ทายชื่อนักเตะสเปน",
+          "youtubeUrl": "https://www.youtube.com/watch?v=jTjy9YkraNw&list=PLXtEljdFmjRF4u06RrLT-OaJbn98TkHfH&index=1"
+        },
+        {
+          "id": "vid-1781794774100",
+          "title": "ทายใจฟุตบอล  02",
+          "youtubeUrl": "https://www.youtube.com/watch?v=L9EqrIL6gXQ&list=PLXtEljdFmjRF4u06RrLT-OaJbn98TkHfH&index=2"
+        },
+        {
+          "id": "vid-1781794799425",
+          "title": "ทายใจฟุตบอล 03",
+          "youtubeUrl": "https://www.youtube.com/watch?v=pD0ePV93Ljg&list=PLXtEljdFmjRF4u06RrLT-OaJbn98TkHfH&index=3"
+        },
+        {
+          "id": "vid-1781794839511",
+          "title": "จับคู่รู้ใจ",
+          "youtubeUrl": "https://www.youtube.com/watch?v=2njTX0mw-qI&list=PLXtEljdFmjRF4u06RrLT-OaJbn98TkHfH&index=4"
+        },
+        {
+          "id": "vid-1781794872354",
+          "title": "ทายใจฟุตบอล 01",
+          "youtubeUrl": "https://www.youtube.com/watch?v=dKx0PyGn_zI&list=PLXtEljdFmjRF4u06RrLT-OaJbn98TkHfH&index=5"
+        },
+        {
+          "id": "vid-1781794916177",
+          "title": "แข่งพูดชื่อนักเตะ real madrid",
+          "youtubeUrl": "https://www.youtube.com/watch?v=NWXdiL0SXa8&list=PLXtEljdFmjRF4u06RrLT-OaJbn98TkHfH&index=6"
+        },
+        {
+          "id": "vid-1781794934796",
+          "title": " แข่งพูดชื่อนักเตะ Brazil",
+          "youtubeUrl": "https://www.youtube.com/watch?v=GvgBu97QTS4&list=PLXtEljdFmjRF4u06RrLT-OaJbn98TkHfH&index=7"
+        },
+        {
+          "id": "vid-1781794958468",
+          "title": " แข่งพูดชื่อนักเตะ สัญชาติอังกฤษ",
+          "youtubeUrl": "https://www.youtube.com/watch?v=JFEBDFoQWAY&list=PLXtEljdFmjRF4u06RrLT-OaJbn98TkHfH&index=8"
+        }
+      ],
+      "description": "ตัดต่อ Content คลิปสั้น ของขอบสนาม"
+    }
+  ],
+  "class_experience": [
+    {
+      "id": "cat-1781788418136",
+      "title": "รายการสารคดี-คนคู่ถิ่น",
+      "videos": [
+        {
+          "id": "vid-1781788458350",
+          "title": "VARNI กระจูดวรรณีทะเลน้อย",
+          "youtubeUrl": "https://youtu.be/-3NoUsNHW74?si=eQi84gdu7ao1VZ3k"
+        },
+        {
+          "id": "vid-1781788549590",
+          "title": " PANAE เตยปาหนันบ้านดุหุน",
+          "youtubeUrl": "https://youtu.be/WHIMR2B8SXw?si=WXbthGGL9aFe3bl-"
+        },
+        {
+          "id": "vid-1781788586392",
+          "title": " โหนดทิ้ง แห่งคาบสมุทรสทิงพระ",
+          "youtubeUrl": "https://youtu.be/8kA7vuj2DoA?si=noAfUzVV_3iFIzTg"
+        }
+      ],
+      "description": " ผลงานนี้เป็นส่วนหนึ่งของรายวิชา โครงงานนิเทศศาสตร์ การผลิตรายการสารคดี “คนคู่ถิ่น” เป็นรายการสารคดีประเภทบุคคลถ่ายทอดในเรื่องราวของบุคคลที่นำเอาทรัพยากรท้องถิ่นที่มีอยู่มาใช้ให้เกิดประโยชน์ พัฒนา และ ยกระดับชุมชนให้ไปสู่การสร้างรายได้ภายในชุมชน  โดยกลุ่มเป้าหมายหลักของทางรายการเป็น กลุ่มคนที่มีอายุระหว่าง 30 – 40 ปี ซึ่งรายการสารคดี “คนคู่ถิ่น” มีจำนวน 3 ตอน ความยาว 8 – 10 นาที"
+    }
+  ]
+}

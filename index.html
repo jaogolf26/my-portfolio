@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANUPONG.J PORT | Video Editor</title>
+    
+    <!-- SEO & OpenGraph -->
+    <meta property="og:title" content="PANUPONG.J | Video Editor & Motion Designer">
+    <meta property="og:description" content="Portfolio of PANUPONG.J. Video Editor and Production.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/uploads/profile-1781799733350.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-text">PANUPONG.J</div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">PANUPONG.J</div>
+        <div class="hamburger" id="hamburger">
+            <i class="fa fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><button id="theme-toggle" class="btn-theme hover-target" title="Toggle Theme"><i class="fa fa-moon"></i></button></li>
+            <li><a href="#" data-view="home" class="nav-link active hover-target">Home</a></li>
+            <li><a href="#" data-view="about" class="nav-link hover-target">About</a></li>
+            <li><a href="#" data-view="port" class="nav-link hover-target">Port</a></li>
+            <li><a href="#" data-view="class_experience" class="nav-link hover-target">Class Experience</a></li>
+            <li><a href="#" data-view="contact" class="nav-link hover-target">Contact</a></li>
+            <li><a href="#" id="login-trigger" class="hover-target" style="opacity:0.3; font-size:0.8rem;">Admin</a></li>
+            <li><a href="#" id="logout-trigger" class="hover-target" style="display:none; color: red;">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container (Views are toggled here) -->
+    <main id="main-content">
+        
+        <!-- ================= VIEW: HOME ================= -->
+        <section id="view-home" class="view-section active">
+            <header class="hero">
+                <div class="hero-bg-fallback"></div>
+                <div class="hero-overlay"></div>
+                
+                <div class="hero-content">
+                    <h1 id="hero-title" class="gsap-reveal">JAOGOLF</h1>
+                    <p id="hero-subtitle" class="subtitle gsap-reveal">Video Editor & Motion Designer</p>
+                    <div id="hero-showreel-container" class="gsap-reveal" style="display:none; margin-top: 2rem;">
+                        <iframe id="hero-showreel" style="width: 100%; max-width: 800px; aspect-ratio: 16/9; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" src="" title="Showreel" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <button class="btn btn-edit admin-only" data-edit="hero" style="display:none; margin-top: 1rem;"><i class="fa fa-pencil"></i> Edit Hero & Showreel</button>
+                </div>
+            </header>
+        </section>
+
+        <!-- ================= VIEW: ABOUT ================= -->
+        <section id="view-about" class="view-section" style="display:none;">
+            <div class="container" style="padding-top: 10rem;">
+                <h2 class="section-title gsap-reveal">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text gsap-reveal">
+                        <p id="about-text-1"></p>
+                        <p id="about-text-2"></p>
+                        
+                        <div style="margin-top: 2rem; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                            <a id="resume-btn" href="#" target="_blank" class="btn" style="display:none;"><i class="fa fa-download"></i> Download Resume</a>
+                            <button class="btn btn-edit admin-only" data-edit="aboutText" style="display:none;"><i class="fa fa-pencil"></i> Edit Text</button>
+                            <button class="btn btn-edit admin-only" data-edit="resume" style="display:none;"><i class="fa fa-upload"></i> Upload Resume</button>
+                        </div>
+                    </div>
+                    <div class="about-image gsap-reveal">
+                        <img id="about-image" src="" alt="Profile">
+                        <button class="btn btn-edit admin-only" data-edit="aboutImage" style="display:none; position: absolute; top:10px; right:10px;"><i class="fa fa-pencil"></i> Change Image</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= VIEW: PORT ================= -->
+        <section id="view-port" class="view-section" style="display:none;">
+            <div class="container" style="padding-top: 10rem;">
+                <h2 class="section-title gsap-reveal">Port</h2>
+                
+                <div id="port-filters" class="gsap-reveal" style="margin-bottom: 2rem; display: flex; gap: 10px; flex-wrap: wrap;"></div>
+                
+                <button class="btn btn-edit admin-only" data-add-cat="port" style="display:none; margin-bottom: 2rem;"><i class="fa fa-plus"></i> เพิ่มหมวดหมู่</button>
+                
+                <div id="port-container">
+                    <!-- Dynamic categories and videos render here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= VIEW: CLASS EXPERIENCE ================= -->
+        <section id="view-class_experience" class="view-section" style="display:none;">
+            <div class="container" style="padding-top: 10rem;">
+                <h2 class="section-title gsap-reveal">Class Experience</h2>
+                
+                <div id="class_experience-filters" class="gsap-reveal" style="margin-bottom: 2rem; display: flex; gap: 10px; flex-wrap: wrap;"></div>
+                
+                <button class="btn btn-edit admin-only" data-add-cat="class_experience" style="display:none; margin-bottom: 2rem;"><i class="fa fa-plus"></i> เพิ่มหมวดหมู่</button>
+                
+                <div id="class_experience-container">
+                    <!-- Dynamic categories and videos render here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= VIEW: CONTACT ================= -->
+        <section id="view-contact" class="view-section" style="display:none;">
+            <div class="container" style="padding-top: 10rem; text-align: center;">
+                <h2 class="section-title gsap-reveal">Contact</h2>
+                <button class="btn btn-edit admin-only" data-edit="contact" style="display:none; margin-bottom: 2rem;"><i class="fa fa-pencil"></i> Edit Links</button>
+
+                <div class="contact-grid gsap-reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 600px; margin: 0 auto;">
+                    <a id="link-facebook" href="#" target="_blank" class="contact-box hover-target">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                    <a id="link-instagram" href="#" target="_blank" class="contact-box hover-target">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a id="link-line" href="#" target="_blank" class="contact-box hover-target">
+                        <i class="fab fa-line"></i> LINE
+                    </a>
+                    <div class="contact-box hover-target">
+                        <i class="fas fa-phone"></i> <span id="link-phone">063-2572115</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= MODALS ================= -->
+    
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-login">&times;</span>
+            <h2>Admin Login</h2>
+            <form id="login-form">
+                <div class="form-group"><input type="text" id="login-username" placeholder="Username" required></div>
+                <div class="form-group"><input type="password" id="login-password" placeholder="Password" required></div>
+                <p id="login-error" style="color: red; display: none;"></p>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Generic Edit Modal -->
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-edit">&times;</span>
+            <h2 id="edit-modal-title">Edit</h2>
+            <form id="edit-form">
+                <div id="edit-form-inputs"></div>
+                <button type="submit" class="btn">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
