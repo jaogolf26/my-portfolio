@@ -365,12 +365,12 @@ document.addEventListener('DOMContentLoaded', () => {
             group.className = 'form-group';
             group.innerHTML = `<label>${f.label}</label>`;
             if (f.type === 'textarea') {
-                group.innerHTML += `<textarea id="${f.id}" required>${f.value}</textarea>`;
+                group.innerHTML += `<textarea id="${f.id}">${f.value}</textarea>`;
             } else if (f.type === 'file') {
                 const accept = f.id === 'f-res' ? 'application/pdf' : 'image/*';
-                group.innerHTML += `<input type="${f.type}" id="${f.id}" accept="${accept}" required>`;
+                group.innerHTML += `<input type="${f.type}" id="${f.id}" accept="${accept}">`;
             } else {
-                group.innerHTML += `<input type="${f.type}" id="${f.id}" value="${f.value}" required>`;
+                group.innerHTML += `<input type="${f.type}" id="${f.id}" value="${f.value}">`;
             }
             inputsContainer.appendChild(group);
         });
